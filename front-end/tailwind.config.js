@@ -9,11 +9,13 @@ export default {
       colors: {
         'primary': '#FFEAC5',
         'secondary' : '#6C4E31',
+        'third' : "#C3B091"
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
       },
-
+      backgroundImage: {
+        hero: "url('/src/assets/logoDog.jpg')"}
     },
   },
   plugins: [],
