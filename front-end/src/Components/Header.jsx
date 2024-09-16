@@ -23,23 +23,23 @@ const Header = () => {
                 </div>
                 {/*mobile Menu*/}
                 <nav className='flex-col items-center justify-center gap-16 font-bold rounded-3xl p-1'>
-                    {menuOpen ? (<MdClose className='md:hidden cursor-pointer p-1 ring-1 ring-slate-900/30 h-10 w-10 rounded-full ' onClick={handleMenu} />
+                    {menuOpen ? (<MdClose className='md:hidden cursor-pointer p-1 ring-1 ring-slate-900/30 h-10 w-10 rounded-full' onClick={handleMenu} />
                     ) : (<MdMenu className='md:hidden cursor-pointer p-1 ring-1 ring-slate-900/30 h-10 w-10 rounded-full ' onClick={handleMenu} />)}
                 </nav>
                 {menuOpen ? (
-                    <nav className="md:hidden flex items-center flex-col gap-y-12 fixed top-28 right-3 p-8 bg-white rounded-3xl shadow-md w-48 medium-16 ring-1 ring-slate-900/5 transition-all duration-300">
-                        <NavLink to={'/'} onClick={closeMenu} className={({ isActive }) => isActive ? "active_link" : ""} ><div className='font-bold text-lg'>Home</div></NavLink>
-                        <NavLink to={'/gallery'} onClick={closeMenu} className={({ isActive }) => isActive ? "active_link" : ""} ><div className='font-bold text-lg'>Gallery</div></NavLink>
-                        <NavLink to={'/breed'} onClick={closeMenu} className={({ isActive }) => isActive ? "active_link" : ""} ><div className='font-bold text-lg'>Breed</div></NavLink>
+                    <nav className="md:hidden flex items-center flex-col gap-y-12 fixed top-28 right-3 p-8 bg-secondary rounded-3xl shadow-md w-48 medium-16 ring-1 ring-slate-900/5 transition-all duration-300">
+                        <NavLink to={'/'} onClick={closeMenu} className={({ isActive }) => isActive ? "active_link" : "text-white"} ><div className='font-bold text-lg'>Home</div></NavLink>
+                        <NavLink to={'/gallery'} onClick={closeMenu} className={({ isActive }) => isActive ? "active_link" : "text-white"} ><div className='font-bold text-lg'>Gallery</div></NavLink>
+                        <NavLink to={'/breed'} onClick={closeMenu} className={({ isActive }) => isActive ? "active_link" : "text-white"} ><div className='font-bold text-lg'>Breed</div></NavLink>
                     </nav>
                 ) : ""}
 
 
                 {/*Laptop Menu*/}
-                <nav className='hidden md:flex flex-row items-center px-10 gap-16 font-bold rounded-3xl'>
-                    <NavLink to={'/'} className={({ isActive }) => isActive ? "active_link" : ""} ><div className='font-bold text-lg'>Home</div></NavLink>
-                    <NavLink to={'/gallery'} className={({ isActive }) => isActive ? "active_link" : ""} ><div className='font-bold text-lg'>Gallery</div></NavLink>
-                    <NavLink to={'/breed'} className={({ isActive }) => isActive ? "active_link" : ""} ><div className='font-bold text-lg'>Breed</div></NavLink>
+                <nav className='hidden md:flex flex-row items-center justify-between gap-16 font-bold rounded-3xl'>
+                    <NavLink to={'/'} className={({ isActive }) => isActive ? "active_link_lap" : ""} ><div className='font-bold text-lg'>Home</div></NavLink>
+                    <NavLink to={'/gallery'} className={({ isActive }) => isActive ? "active_link_lap" : ""} ><div className='font-bold text-lg'>Gallery</div></NavLink>
+                    <NavLink to={'/breed'} className={({ isActive }) => isActive ? "active_link_lap" : ""} ><div className='font-bold text-lg'>Breed</div></NavLink>
                 </nav>
             </div>
         </header>

@@ -48,12 +48,12 @@ const Introduction = () => {
   return (
     <section className=' rounded-2xl my-10'>
       <div className='max_padd_container w-full'>
-        <div className='flex flex-col gap-2 justify-center sm:max-w-[70%] md:max-w-[60%]'>
-          <h1 className='h1 capitalize'>Explorez, apprenez, et adorez le monde des chiens !</h1>
+        <div className='flex flex-col gap-6 justify-center sm:max-w-[70%] md:max-w-[60%]'>
+          <h1 className='h1 capitalize underline decoration-third'>Explorez, apprenez, et adorez le monde des chiens !</h1>
           <p className='p text-black'>Découvrez tout ce que vous devez savoir sur vos amis à quatre pattes en explorant diverses informations détaillées sur différentes races</p>
           <div className='flex flex-row gap-5 items-center w-full'>
             {images.map((image, i) => {
-              return <img className='rounded-3xl bg-secondary shadow-lg shadow-secondary h-[20rem] w-[20rem] my-8 hover:scale-[1.01] cursor-pointer transition-all' key={i} src={image} alt='Image'></img>
+              return <img className='rounded-3xl bg-secondary shadow-lg shadow-secondary h-[20rem] w-[20rem] my-8 hover:scale-[1.01] cursor-pointer transition-all duration-300' key={i} src={image} alt='Image'></img>
             })}
           </div>
         </div>
