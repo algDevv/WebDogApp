@@ -4,7 +4,7 @@ const CardUser = ({ profil, name, nameDog, review }) => {
 
 
     return (
-        <div className='relative rounded-2xl flex flex-col items-center justify-center p-6 bg-third shadow-lg cursor-pointer shadow-third hover:-translate-y-3 transition-all duration-700 hover:scale-[1.03]'>
+        <div className='relative rounded-2xl flex flex-col items-center justify-center p-6 bg-third shadow-lg cursor-pointer shadow-third hover:-translate-y-3 transition-all duration-700 hover:scale-[1.01]'>
             <div className='relative flexCenter  overflow-hidden transition-all duration-100'>
                 <img src={profil} alt='productImage' className='rounded-full h-20 w-20' />
             </div>

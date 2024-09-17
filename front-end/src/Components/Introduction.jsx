@@ -20,7 +20,7 @@ const Introduction = () => {
         };
 
         const imagePromises = [fetchImage()];
-        // Vérifier la largeur de l'écran
+        // pour afficher une ou 2 images en fontion de la taille d'écran
         if (window.innerWidth >= 1020) {
           imagePromises.push(fetchImage());
         }
@@ -35,7 +35,7 @@ const Introduction = () => {
     };
 
     fetchRandomDogImages();
-  }, []); // L'effet s'exécute une seule fois au montage du composant
+  }, []);
 
   if (loading) {
     return <p>Chargement des images...</p>;
