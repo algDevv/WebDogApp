@@ -5,7 +5,7 @@ import CardUser from './CardUser'
 
 const Cards = () => {
   return (
-    <section className='mt-20 bg-white w-full '>
+    <section className='mt-20 bg-white w-full rounded-tl-3xl rounded-tr-3xl'>
       <div className='max_padd_container'>
         <div className='w-full flex pt-24'>
           <h3 className='h3 capitalize mx-auto text-secondary'>Ils ont testé, ils en parlent</h3>

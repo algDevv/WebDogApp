@@ -8,15 +8,22 @@ export default {
     extend: {
       colors: {
         'primary': '#FFEAC5',
-        'secondary' : '#6C4E31',
-        'third' : "#C3B091"
+        'secondary': '#6C4E31',
+        'third': "#C3B091"
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
       },
       backgroundImage: {
-        hero: "url('/src/assets/logoDog.jpg')"}
+        hero: "url('/src/assets/logoDog.jpg')"
+      },
+      screens: {
+        'xs': '400px',
+        'xxs': '200px'
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }

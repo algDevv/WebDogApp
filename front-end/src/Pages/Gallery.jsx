@@ -1,10 +1,13 @@
 import React from 'react'
-
+import Description from '../Components/Description'
+import CarrousselDog from '../Components/CarrousselDog'
 const Gallery = () => {
   return (
     <div>
-      <p>Gallery Page</p>
+      <Description />
+      <CarrousselDog />
     </div>
+
   )
 }
 
