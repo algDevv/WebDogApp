@@ -1,10 +1,14 @@
 import React from 'react'
-
+import BannBreed from '../Components/BannBreed'
+import SearchBreed from '../Components/SearchBreed'
 const Breed = () => {
   return (
-    <div>
-      <p>Breed Page</p>
+
+    <div className='min-h-auto '>
+      <BannBreed />
+      <SearchBreed />
     </div>
+    
   )
 }
 

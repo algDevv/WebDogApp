@@ -34,7 +34,7 @@ const CarrousselDog = () => {
         <section className='rounded-tl-[3rem] rounded-tr-[3rem] shadow-2xl shadow-secondary py-2 lg:mt-32'>
             <div className='max_padd_container gap-10 my-10'>
                 <h3 className='h3 capitalize text-secondary underline py-3 my-6'>Toujours plus d'images</h3>
-                <div className='flex flex-row justify-between gap-10 rounded-3xl ml-8'>
+                <div className='flex flex-row justify-between gap-10 rounded-3xl ml-8 lg:mt-16'>
                     <div className="carousel w-[90%] lg:max-w-[70%] relative h-96">
                         {images.map((imageUrl, index) => (
                             <div key={index} id={`slide${index + 1}`} className="carousel-item relative w-full rounded-3xl ">

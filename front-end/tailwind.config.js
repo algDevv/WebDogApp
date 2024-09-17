@@ -15,7 +15,7 @@ export default {
         sans: ['Montserrat', 'sans-serif'],
       },
       backgroundImage: {
-        hero: "url('/src/assets/logoDog.jpg')"
+        hero: "url('/src/assets/banniere.png')"
       },
       screens: {
         'xs': '400px',
